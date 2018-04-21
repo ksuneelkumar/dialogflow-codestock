@@ -33,7 +33,7 @@ const STATIC_MAPS_LOCATION = "https://goo.gl/maps/SgsevecNDsM2";
 const STATIC_MAPS_SIZE = '640x640';
 const url = require('url'); 
 
-exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, response) => {
+exports.codestockFulfillment = functions.https.onRequest((request, response) => {
   const agent = new WebhookClient({ request, response });
   const app = new DialogflowApp({ request, response });
   console.log('Dialogflow Request headers: ' + JSON.stringify(request.headers));
